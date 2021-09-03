@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .blue-text {
+    @apply text-blue-500;
+  }
+  .navbar {
+    @apply flex justify-between shadow items-center px-2;
+  }
+  .theme-button {
+    @apply cursor-pointer bg-gray-500 text-white rounded-full p-2 m-1 dark:bg-yellow-300;
+  }
+  .input {
+    @apply rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent mb-2;
+  }
+  .button {
+    @apply py-2 px-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg;
+  }
+  .gray-bg {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+  .white-bg {
+    @apply bg-white  dark:bg-gray-900;
+  }
+  .white-text {
+    @apply text-black dark:text-gray-300;
+  }
+  .gray-border {
+    @apply border-gray-100 dark:border-gray-700;
+  }
+
+  .gray-divide {
+    @apply divide-gray-100 dark:divide-gray-700;
+  }
+  .trash-icon {
+    @apply text-red-500 p-1 hover:bg-red-500 hover:!text-white cursor-pointer;
+  }
+  .edit-icon {
+    @apply text-green-500 p-1 hover:bg-green-500 hover:!text-white cursor-pointer;
+  }
+
+  .dot {
+    @apply w-4 h-4 m-1 rounded-full border-2 hover:bg-green-600 cursor-pointer;
+  }
+  .dot-ok {
+    @apply w-4 h-4 m-1 rounded-full border-2 bg-green-600 hover:bg-transparent cursor-pointer;
+  }
+
+  .icon-button {
+    @apply py-2 px-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-auto transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg;
+  }
+}
