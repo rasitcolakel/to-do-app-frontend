@@ -6,8 +6,7 @@ export default function Index() {
   const dispatch = useDispatch();
   const todos = useSelector((state) => state.todos.data);
   const token = useSelector((state) => state.auth.token);
-  React.useEffect(() => dispatch(getTodos()), []);
-  React.useEffect(() => console.log("todos", todos), [todos]);
+  React.useEffect(() => dispatch(getTodos()), [dispatch]);
   console.log("token", token);
   const [title, setTitle] = React.useState("");
 
