@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getTodos, updateTodos, deleteTodos, newTodo } from "store/actions";
 import { BiPlus, BiTrash } from "react-icons/bi";
+console.log(process.env.NODE_ENV);
 export default function Index() {
   const dispatch = useDispatch();
   const todos = useSelector((state) => state.todos.data);

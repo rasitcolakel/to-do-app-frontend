@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { register } from "store/actions";
 import { snackbarActions } from "store/snackbar";
+import { Link } from "react-router-dom";
+
 let fields = [
   {
     type: "text",
@@ -47,7 +49,7 @@ export default function Register() {
             RegisterForm();
           }}
         >
-          <h1 className="text-3xl font-normal leading-normal mt-0 mb-2 text-lightBlue-800 text-center blue-text">
+          <h1 className="text-3xl font-normal leading-normal mt-2 mb-4 text-lightBlue-800 text-center blue-text">
             Register - Todo App
           </h1>
           {fields.map((field, i) => (
@@ -62,11 +64,15 @@ export default function Register() {
               }
             />
           ))}
-
           <button type="submit" className="button">
             Register
           </button>
         </form>
+        <Link to="/login">
+          <p className="text-blue-600 text-center cursor-pointer w-full text-lg hover:underline hover:text-blue-500">
+            Do you have account? Log in
+          </p>
+        </Link>
       </div>
     </div>
   );

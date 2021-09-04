@@ -13,7 +13,9 @@ const authSlice = createSlice({
       localStorage.setItem("todoToken", action.payload.token);
     },
     logout(state) {
-      state = { ...initialState };
+      state.token = null;
+      state.isAuth = false;
+      localStorage.removeItem("todoToken");
     },
   },
 });

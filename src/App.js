@@ -12,12 +12,11 @@ import { useSelector } from "react-redux";
 import Index from "pages/Index";
 function App() {
   const isAuth = useSelector((state) => state.auth.isAuth);
-
   return (
     <div className="h-screen w-full flex flex-col gray-bg">
-      <Navbar />
-      <div className="w-2/6 mx-auto flex items-center">
-        <Router>
+      <Router>
+        <Navbar />
+        <div className="w-2/6 mx-auto flex items-center">
           <Switch>
             <Route path="/login">
               {isAuth ? <Redirect to="/" /> : <Login />}
@@ -29,9 +28,9 @@ function App() {
               {!isAuth ? <Redirect to="/login" /> : <Index />}
             </Route>
           </Switch>
-        </Router>
-      </div>
-      <Alert />
+        </div>
+        <Alert />
+      </Router>
     </div>
   );
 }

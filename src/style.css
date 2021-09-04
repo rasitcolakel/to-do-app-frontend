@@ -917,6 +917,11 @@ video {
   margin-bottom: 0.5rem !important;
 }
 
+.mx-2 {
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+
 .mb-4 {
   margin-bottom: 1rem !important;
 }
@@ -933,6 +938,10 @@ video {
   margin-top: 0.75rem !important;
 }
 
+.\!mb-0 {
+  margin-bottom: 0px !important;
+}
+
 .ml-2 {
   margin-left: 0.5rem !important;
 }
@@ -945,8 +954,8 @@ video {
   margin-bottom: 0.5rem !important;
 }
 
-.\!mb-0 {
-  margin-bottom: 0px !important;
+.mt-2 {
+  margin-top: 0.5rem !important;
 }
 
 .block {
@@ -987,6 +996,14 @@ video {
 
 .\!flex-1 {
   flex: 1 1 0% !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
 }
 
 .flex-col {
@@ -1118,6 +1135,21 @@ video {
   line-height: 2.25rem !important;
 }
 
+.text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+
+.text-4xl {
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
+}
+
 .font-normal {
   font-weight: 400 !important;
 }
@@ -1156,6 +1188,36 @@ video {
   color: rgba(6, 78, 59, var(--tw-text-opacity)) !important;
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(59, 130, 246, var(--tw-text-opacity)) !important;
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(96, 165, 250, var(--tw-text-opacity)) !important;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(37, 99, 235, var(--tw-text-opacity)) !important;
+}
+
+.text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(239, 68, 68, var(--tw-text-opacity)) !important;
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(220, 38, 38, var(--tw-text-opacity)) !important;
+}
+
 .line-through {
   text-decoration: line-through !important;
 }
@@ -1163,6 +1225,25 @@ video {
 .filter {
   -webkit-filter: var(--tw-filter) !important;
           filter: var(--tw-filter) !important;
+}
+
+.hover\:text-blue-400:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgba(96, 165, 250, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-blue-500:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgba(59, 130, 246, var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-red-400:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgba(248, 113, 113, var(--tw-text-opacity)) !important;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline !important;
 }
 
 @media (min-width: 640px) {

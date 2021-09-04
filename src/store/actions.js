@@ -3,8 +3,7 @@ import { snackbarActions } from "./snackbar";
 import { todosActions } from "./todos";
 import axios from "axios";
 import store from "./index";
-
-let API_URL = "https://to-do-app-backend-idv.herokuapp.com/";
+import { API_URL } from "../config";
 
 export const login = (params) => {
   return async (dispatch) => {
