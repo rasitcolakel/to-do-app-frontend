@@ -42,7 +42,7 @@
   }
 
   .dot {
-    @apply w-4 h-4 m-1 rounded-full border-2 hover:bg-green-600 cursor-pointer;
+    @apply w-4 h-4 m-1 rounded-full border-2 cursor-pointer;
   }
   .dot-ok {
     @apply w-4 h-4 m-1 rounded-full border-2 bg-green-600 hover:bg-transparent cursor-pointer;

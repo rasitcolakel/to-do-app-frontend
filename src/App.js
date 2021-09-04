@@ -16,7 +16,7 @@ function App() {
     <div className="h-screen w-full flex flex-col gray-bg">
       <Router>
         <Navbar />
-        <div className="w-2/6 mx-auto flex items-center">
+        <div className="w-full px-2 md:w-2/4 lg:w-2/6 mx-auto flex items-center">
           <Switch>
             <Route path="/login">
               {isAuth ? <Redirect to="/" /> : <Login />}
