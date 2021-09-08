@@ -9,7 +9,7 @@ export default function Alert() {
   const type = useSelector((state) => state.snackbar.type);
 
   return (
-    <div class="fixed bottom-0 w-full">
+    <div className="fixed bottom-0 w-full">
       <div className="flex flex-1 justify-center items-center mb-4">
         <div className="w-full px-2 md:w-2/4 lg:w-2/6">
           {toggleSnackbar ? (
